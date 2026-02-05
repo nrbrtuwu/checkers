@@ -3,7 +3,7 @@ export type Language = 'en' | 'hu'
 export const translations = {
   en: {
     title: 'Checkers',
-    subtitle: 'Play against AI',
+    subtitle: '',
     you: 'You',
     bot: 'Bot',
     vs: 'VS',
@@ -34,7 +34,7 @@ export const translations = {
   },
   hu: {
     title: 'Dáma',
-    subtitle: 'Játssz a gép ellen',
+    subtitle: '',
     you: 'Te',
     bot: 'Gép',
     vs: 'VS',
