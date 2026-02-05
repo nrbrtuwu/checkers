@@ -1,0 +1,68 @@
+export type Language = 'en' | 'hu'
+
+export const translations = {
+  en: {
+    title: 'Checkers',
+    subtitle: 'Play against AI',
+    you: 'You',
+    bot: 'Bot',
+    vs: 'VS',
+    pieces: 'pieces',
+    kings: 'kings',
+    youWin: 'You Win!',
+    botWins: 'Bot Wins!',
+    botThinking: 'Bot is thinking...',
+    yourTurn: 'Your turn - select a piece',
+    botTurn: "Bot's turn",
+    newGame: 'New Game',
+    botDifficulty: 'Bot Difficulty',
+    footer: 'White moves first • Captures are mandatory',
+    difficulties: {
+      beginner: 'Beginner',
+      easy: 'Easy',
+      medium: 'Medium',
+      hard: 'Hard',
+      expert: 'Expert',
+    },
+    difficultyDescriptions: {
+      beginner: 'Random moves',
+      easy: 'Basic strategy',
+      medium: 'Thoughtful play',
+      hard: 'Strong opponent',
+      expert: 'Master level',
+    },
+  },
+  hu: {
+    title: 'Dáma',
+    subtitle: 'Játssz a gép ellen',
+    you: 'Te',
+    bot: 'Gép',
+    vs: 'VS',
+    pieces: 'bábu',
+    kings: 'király',
+    youWin: 'Nyertél!',
+    botWins: 'A gép nyert!',
+    botThinking: 'A gép gondolkodik...',
+    yourTurn: 'Te jössz - válassz egy bábut',
+    botTurn: 'A gép jön',
+    newGame: 'Új játék',
+    botDifficulty: 'Gép nehézsége',
+    footer: 'A fehér kezd • A leütés kötelező',
+    difficulties: {
+      beginner: 'Kezdő',
+      easy: 'Könnyű',
+      medium: 'Közepes',
+      hard: 'Nehéz',
+      expert: 'Mester',
+    },
+    difficultyDescriptions: {
+      beginner: 'Véletlenszerű lépések',
+      easy: 'Alap stratégia',
+      medium: 'Átgondolt játék',
+      hard: 'Erős ellenfél',
+      expert: 'Mester szint',
+    },
+  },
+} as const
+
+export type Translations = typeof translations.en
